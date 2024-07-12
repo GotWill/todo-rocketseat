@@ -1,0 +1,112 @@
+.content {
+  max-width: 736px;
+  margin: 0 auto;
+
+
+  & form {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: -1.5rem;
+
+    & input {
+      background: var(--gray-500);
+      max-width: 768px;
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 16px;
+      color: #808080;
+      border: 1px solid var(--gray-700);
+      border-radius: 8px;
+    }
+
+    & button {
+      background: #1E6F9F;
+      color: white;
+      padding: 16px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: background-color 0.2s;
+
+      &:disabled {
+        opacity: 0.9;
+        cursor: not-allowed;
+      }
+
+      &:hover:not(:disabled) {
+        background: var(--blue);
+      }
+    }
+
+
+  }
+
+  & .header_options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--gray-400);
+
+    & div:nth-child(1) {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      & p {
+        color: #4EA8DE;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      & span {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: var(--gray-400);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 12px;
+      }
+    }
+
+    & div:nth-child(2) {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      & p {
+        color: #8284FA;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      & .badge {
+        border-radius: 50px;
+        background-color: var(--gray-400);
+        padding: 5px;
+        color: var(--gray-200);
+        font-size: 12px;
+
+
+      }
+    }
+  }
+
+  & .flex_list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,45 @@
+.content {
+    background: var(--gray-500);
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 8px;
+
+    & p {
+        color: var(--gray-100);
+        font-size: 14px;
+    }
+
+    & input {
+        width: 20px;
+        cursor: pointer;
+        accent-color: #5E60CE;
+    }
+
+    
+
+
+    & input:checked + p {
+        text-decoration: line-through;
+    }
+
+    & button {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        padding: 3px;
+
+        &:hover {
+            background: var(--gray-400);
+            border-radius: 4px;
+        }
+
+        & svg {
+            color: var(--gray-300);
+        }
+    }
+
+   
+}
